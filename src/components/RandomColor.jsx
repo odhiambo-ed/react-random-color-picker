@@ -19,7 +19,7 @@ function RandomColor() {
 
     }
   return (
-    <div className="container vw-100 vh-100 d-flex flex-column gap-2 justify-content-center align-items-center">
+    <div style={{backgroundColor: randomRgb}} className="container-fluid vw-100 vh-100 d-flex flex-column gap-2 justify-content-center align-items-center">
       <h3>Generate Random Colors</h3>
       <div className="d-flex gap-1">
         <div onClick={handleRgbClick} className="btn btn-outline-dark">
