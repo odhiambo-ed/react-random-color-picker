@@ -24,9 +24,6 @@ function RandomColor() {
 
     }
 
-    const handleHslClick = () => {
-
-    }
   return (
     <div style={{backgroundColor: randomColor}} className="container-fluid vw-100 vh-100 d-flex flex-column gap-2 justify-content-center align-items-center">
       <h3>Generate Random Colors</h3>
@@ -37,13 +34,8 @@ function RandomColor() {
         <div onClick={ handleHexClick } className="btn btn-outline-dark">
           Generate With Hexadecimal
         </div>
-        <div onClick={ handleHslClick } className="btn btn-outline-dark">
-          Generate With HSL
-        </div>
       </div>
       <div className="btn btn-outline-dark py-2 px-5">Color: {randomColor} </div>
-      {/* <div className="btn btn-outline-dark py-2 px-5">Color: #{randomHex} </div>
-      <div className="btn btn-outline-dark py-2 px-5">Color: hsl({randomHsl}) </div> */}
     </div>
   );
 }
