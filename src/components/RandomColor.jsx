@@ -34,7 +34,8 @@ function RandomColor() {
         <div onClick={ handleHexClick } className="btn btn-outline-dark">
           Generate With Hexadecimal
         </div>
-      </div>
+          </div>
+          <p>The color type is: { colorType }</p>
       <div className="btn btn-outline-dark py-2 px-5">Color: {randomColor} </div>
     </div>
   );
