@@ -14,6 +14,13 @@ function RandomColor() {
     }
 
     const handleHexClick = () => {
+        setColorType("hex")
+        const hex = `#${Math.floor(Math.random() * 256).toString(
+          16
+        )}${Math.floor(Math.random() * 256).toString(16)}${Math.floor(
+          Math.random() * 256
+        ).toString(16)}`;
+        setRandomColor(hex)
 
     }
 
@@ -34,7 +41,7 @@ function RandomColor() {
           Generate With HSL
         </div>
       </div>
-      <div className="btn btn-outline-dark py-2 px-5">Color: {colorType} </div>
+      <div className="btn btn-outline-dark py-2 px-5">Color: {randomColor} </div>
       {/* <div className="btn btn-outline-dark py-2 px-5">Color: #{randomHex} </div>
       <div className="btn btn-outline-dark py-2 px-5">Color: hsl({randomHsl}) </div> */}
     </div>
